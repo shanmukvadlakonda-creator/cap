@@ -1,0 +1,23 @@
+  Prompt for the New Machine
+
+  Paste this at the start of a new conversation:
+
+  I have a Budget App with the following structure:
+
+  - backend/ — FastAPI + SQLAlchemy + PostgreSQL (port 8080)
+    - app/main.py is the entry point
+    - app/routers/ has: auth, users, categories, transactions, budget, targets, reports
+    - Uses JWT auth (python-jose), passwords via passlib/bcrypt
+    - Config in backend/.env (DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, SECRET_KEY)
+
+  - frontend/ — Flutter (Dart) desktop/mobile app
+    - lib/main.dart is the entry point
+    - lib/config/api_config.dart holds the backend IP/port
+    - lib/screens/ has: login, home, dashboard, add_transaction, budget_planning, monthly_view, reports
+    - lib/services/ has: api_service.dart, auth_service.dart
+
+  The Flutter app talks to the FastAPI backend over local Wi-Fi.
+  PostgreSQL database is named: budgetdb
+
+  To run backend: activate venv, then uvicorn app.main:app --reload --port 8080
+  To run frontend: flutter pub get, then flutter run
