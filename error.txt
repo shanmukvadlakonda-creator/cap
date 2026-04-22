@@ -1,27 +1,2 @@
-
-C:\Users\shanm\Desktop\Professional\Budget_app\frontend>flutter run -d chrome
-Resolving dependencies...
-Downloading packages...
-  fl_chart 0.65.0 (1.2.0 available)
-  flutter_lints 3.0.2 (6.0.0 available)
-  intl 0.18.1 (0.20.2 available)
-  lints 3.0.0 (6.1.0 available)
-  meta 1.17.0 (1.18.2 available)
-  test_api 0.7.10 (0.7.11 available)
-  vector_math 2.2.0 (2.3.0 available)
-  vm_service 15.0.2 (15.1.0 available)
-Got dependencies!
-8 packages have newer versions incompatible with dependency constraints.
-Try `flutter pub outdated` for more information.
-This application is not configured to build on the web.
-To add web support to a project, run `flutter create .`.
-Launching lib\main.dart on Chrome in debug mode...
-lib/main.dart:27:20: Error: The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.
- - 'CardTheme' is from 'package:flutter/src/material/card_theme.dart'
- ('../flutter/packages/flutter/lib/src/material/card_theme.dart').
- - 'CardThemeData' is from 'package:flutter/src/material/card_theme.dart'
- ('../flutter/packages/flutter/lib/src/material/card_theme.dart').
-        cardTheme: CardTheme(
-                   ^
-Waiting for connection from debug service on Chrome...             36.2s
-Failed to compile application.
+  curl -X POST http://localhost:8080/api/auth/register -H "Content-Type: application/json" -d
+  "{\"username\":\"admin\",\"password\":\"admin123\",\"display_name\":\"Admin\"}"
