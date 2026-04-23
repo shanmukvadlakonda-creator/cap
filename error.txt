@@ -1,2 +1,10 @@
-  curl -X POST http://localhost:8080/api/auth/register -H "Content-Type: application/json" -d
-  "{\"username\":\"admin\",\"password\":\"admin123\",\"display_name\":\"Admin\"}"
+(myenv) C:\Users\shanm\Desktop\Professional\Budget_app\backend>python run.py
+Categories already seeded. Skipping.
+Traceback (most recent call last):
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\run.py", line 10, in <module>
+    app = create_app()
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\app.py", line 30, in create_app
+    from app.routers import auth, users, categories, budget, targets, transactions, reports
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\routers\users.py", line 4, in <module>
+    bp = Blueprint('users', __name__, url_prefix='/api/users', strict_slashes=False)
+TypeError: Blueprint.__init__() got an unexpected keyword argument 'strict_slashes'
