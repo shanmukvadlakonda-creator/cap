@@ -1,24 +1,122 @@
+(myenv) C:\Users\shanm\Desktop\Professional\Budget_app\backend>python run.py
+Categories already seeded. Skipping.
+ * Serving Flask app 'app.app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.36:8080
+Press CTRL+C to quit
+ * Restarting with stat
+Categories already seeded. Skipping.
+ * Debugger is active!
+ * Debugger PIN: 104-839-885
+127.0.0.1 - - [23/Apr/2026 14:45:35] "OPTIONS /api/accounts HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2026 14:45:35] "OPTIONS /api/investments HTTP/1.1" 200 -
+C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 27 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+127.0.0.1 - - [23/Apr/2026 14:45:35] "GET /api/accounts HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2026 14:45:35] "GET /api/investments HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2026 14:45:48] "OPTIONS /api/accounts HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2026 14:45:48] "POST /api/accounts HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column transactions.account_id does not exist
+LINE 1: ...id, transactions.user_id AS transactions_user_id, transactio...
+                                                             ^
 
-C:\Users\shanm\Desktop\Professional\Budget_app\frontend>flutter run -d chrome
-Resolving dependencies... (1.1s)
-Downloading packages...
-  fl_chart 0.65.0 (1.2.0 available)
-  flutter_lints 3.0.2 (6.0.0 available)
-  intl 0.18.1 (0.20.2 available)
-  lints 3.0.0 (6.1.0 available)
-  meta 1.17.0 (1.18.2 available)
-  native_toolchain_c 0.17.6 (0.18.0 available)
-  test_api 0.7.10 (0.7.11 available)
-  vector_math 2.2.0 (2.3.0 available)
-  vm_service 15.0.2 (15.1.0 available)
-Got dependencies!
-9 packages have newer versions incompatible with dependency constraints.
-Try `flutter pub outdated` for more information.
-This application is not configured to build on the web.
-To add web support to a project, run `flutter create .`.
-Launching lib\main.dart on Chrome in debug mode...
-lib/screens/home_screen.dart:155:28: Error: Expected ']' before this.
-            const Divider();
-                           ^
-Waiting for connection from debug service on Chrome...             18.6s
-Failed to compile application.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\auth.py", line 59, in decorated
+    return f(user, *args, **kwargs)
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\routers\accounts.py", line 65, in create_account
+    return jsonify(_serialize(account)), 201
+                   ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\routers\accounts.py", line 37, in _serialize
+    "balance": _balance(account),
+               ~~~~~~~~^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\routers\accounts.py", line 9, in _balance
+    txns = account.transactions
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 569, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1096, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1131, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\strategies.py", line 978, in _load_for_state
+    return self._emit_lazyload(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\strategies.py", line 1141, in _emit_lazyload
+    result = session.execute(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ^
+  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\myenv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column transactions.account_id does not exist
+LINE 1: ...id, transactions.user_id AS transactions_user_id, transactio...
+                                                             ^
+
+[SQL: SELECT transactions.id AS transactions_id, transactions.budget_id AS transactions_budget_id, transactions.category_id AS transactions_category_id, transactions.user_id AS transactions_user_id, transactions.account_id AS transactions_account_id, transactions.amount AS transactions_amount, transactions.transaction_date AS transactions_transaction_date, transactions.payment_method AS transactions_payment_method, transactions.note AS transactions_note, transactions.created_at AS transactions_created_at
+FROM transactions
+WHERE %(param_1)s = transactions.account_id]
+[parameters: {'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
