@@ -1,0 +1,96 @@
+ Here's the full walkthrough of every screen based on your actual code:
+
+  ---
+  First Time Setup — Create a Budget
+
+  When you open the Dashboard for a new year (e.g. 2026) and no budget exists yet, you'll see:
+
+  ▎ "No budget for 2026 yet" with a Create Budget 2026 button.
+
+  Click it → a dialog pops up asking for:
+  - Beginning Spending Balance — how much cash/bank money you're starting the year with (e.g. ₹50,000)
+  - Beginning Savings Balance — how much is already in your savings/FD (e.g. ₹2,00,000)
+
+  These are your opening balances. After hitting Create, the dashboard loads.
+
+  ---
+  Tab 1 — Dashboard (Annual Overview)
+
+  What you see:
+  - 4 summary cards at the top: Total Income, Total Expenses, NET Balance, Spending Balance
+  - A grid of 12 month cards (Jan–Dec), each showing income (green), expenses (red), and net for that month
+  - Arrows at the top to navigate between years (< 2025 / 2026 >)
+
+  What to do:
+  - Tap any month card (e.g. Apr) → opens the Monthly View for that month, showing a day-by-day breakdown with running balance
+  - Pull down to refresh
+
+  ---
+  The + Button (Add Transaction)
+
+  The blue + button on the Dashboard opens the Add Transaction screen. This is how you record every rupee spent or earned.
+
+  Fields to fill:
+  1. Date — tap to pick a date (restricted to the current month)
+  2. Category Group — e.g. "Food & Dining", "Income", "Savings"
+  3. Category — sub-category under the group (e.g. "Groceries" under Food & Dining)
+  4. Amount — in ₹
+  5. Payment Method — Cash / SBI / ICICI / RBL / HDFC / HDFC Rupay / Yes Rupay
+  6. Spent By — which family member (only shown if multiple users exist)
+  7. Note — optional description
+
+  Hit Save Transaction — it's saved and the dashboard updates.
+
+  ---
+  Tab 2 — Planning (Budget Targets)
+
+  What it is: Where you set how much you plan to spend in each category for a month — your budget targets.
+
+  What you see:
+  - Month dropdown + year arrows at the top to switch months
+  - All expense and savings category groups listed as expandable cards (income is hidden — you don't "plan" income here)
+  - Each category has a ₹ input field on the right
+
+  What to do:
+  1. Select the month (e.g. April 2026)
+  2. Expand a group (e.g. "Food & Dining") → type planned amounts for each category (e.g. Groceries ₹8000, Restaurants ₹3000)
+  3. Hit Save All at the bottom — saves all targets at once
+  4. Copy Previous button — copies last month's targets into this month (saves re-typing if budget is similar month to month)
+
+  These planned amounts show as the "Planned" column on the Dashboard vs the "Actual" you actually spent.
+
+  ---
+  Tab 3 — Reports
+
+  Three sub-tabs inside Reports:
+
+  By Category (pie chart)
+  - Shows expense spending broken down by category group for the selected month
+  - Pie chart + legend with ₹ amounts and percentages
+  - Use the month chips at the top (Jan–Dec) to switch months
+
+  Monthly Trend (bar chart)
+  - Shows income (green bars) vs expenses (red bars) for all 12 months of the year
+  - List below shows each month's income, expenses, and net
+  - Good for spotting which months you overspent
+
+  By Person (pie chart)
+  - Shows how much each family member spent in the selected month
+  - Pie chart + cards per person with name, total ₹ spent, and % of total household spending
+
+  ---
+  Side Drawer (hamburger menu)
+
+  Swipe from the left or tap the top-left icon to open the drawer. It has shortcuts to:
+  - Dashboard
+  - Monthly View — direct link to the current month's day-by-day view
+  - Add Transaction
+  - Budget Planning
+  - Reports
+  - Logout
+
+  ---
+  Recommended flow for each month:
+  1. Start of month → go to Planning, set targets for the month (or Copy Previous)
+  2. Throughout the month → tap + each time you spend or receive income
+  3. End of month → check Dashboard to see actual vs planned, check Reports to see where money went
