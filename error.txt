@@ -1,10 +1,24 @@
-(myenv) C:\Users\shanm\Desktop\Professional\Budget_app\backend>python run.py
-Categories already seeded. Skipping.
-Traceback (most recent call last):
-  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\run.py", line 10, in <module>
-    app = create_app()
-  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\app.py", line 30, in create_app
-    from app.routers import auth, users, categories, budget, targets, transactions, reports
-  File "C:\Users\shanm\Desktop\Professional\Budget_app\backend\app\routers\users.py", line 4, in <module>
-    bp = Blueprint('users', __name__, url_prefix='/api/users', strict_slashes=False)
-TypeError: Blueprint.__init__() got an unexpected keyword argument 'strict_slashes'
+
+C:\Users\shanm\Desktop\Professional\Budget_app\frontend>flutter run -d chrome
+Resolving dependencies... (1.1s)
+Downloading packages...
+  fl_chart 0.65.0 (1.2.0 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  intl 0.18.1 (0.20.2 available)
+  lints 3.0.0 (6.1.0 available)
+  meta 1.17.0 (1.18.2 available)
+  native_toolchain_c 0.17.6 (0.18.0 available)
+  test_api 0.7.10 (0.7.11 available)
+  vector_math 2.2.0 (2.3.0 available)
+  vm_service 15.0.2 (15.1.0 available)
+Got dependencies!
+9 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+This application is not configured to build on the web.
+To add web support to a project, run `flutter create .`.
+Launching lib\main.dart on Chrome in debug mode...
+lib/screens/home_screen.dart:155:28: Error: Expected ']' before this.
+            const Divider();
+                           ^
+Waiting for connection from debug service on Chrome...             18.6s
+Failed to compile application.
