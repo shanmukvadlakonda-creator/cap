@@ -17,7 +17,7 @@ Try `flutter pub outdated` for more information.
 This application is not configured to build on the web.
 To add web support to a project, run `flutter create .`.
 Launching lib\main.dart on Chrome in debug mode...
-Waiting for connection from debug service on Chrome...             17.8s
+Waiting for connection from debug service on Chrome...             15.1s
 
 Flutter run key commands.
 r Hot reload.
@@ -27,10 +27,10 @@ d Detach (terminate "flutter run" but leave application running).
 c Clear the screen
 q Quit (terminate the application on the device).
 
-Debug service listening on ws://127.0.0.1:54922/1tf6ijlv_sw=/ws
-A Dart VM Service on Chrome is available at: http://127.0.0.1:54922/1tf6ijlv_sw=
+Debug service listening on ws://127.0.0.1:50152/oztig7AVr_Y=/ws
+A Dart VM Service on Chrome is available at: http://127.0.0.1:50152/oztig7AVr_Y=
 The Flutter DevTools debugger and profiler on Chrome is available at:
-http://127.0.0.1:54922/1tf6ijlv_sw=/devtools/?uri=ws://127.0.0.1:54922/1tf6ijlv_sw=/ws
+http://127.0.0.1:50152/oztig7AVr_Y=/devtools/?uri=ws://127.0.0.1:50152/oztig7AVr_Y=/ws
 Starting application from main method in: org-dartlang-app:/web_entrypoint.dart.
 ══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
 The following assertion was thrown during performLayout():
@@ -50,7 +50,7 @@ If this message did not help you determine the problem, consider using debugDump
   https://flutter.dev/to/debug-render-layer
   https://api.flutter.dev/flutter/rendering/debugDumpRenderTree.html
 The affected RenderFlex is:
-  RenderFlex#7b0a2 relayoutBoundary=up7 NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE(creator: Row ← Align ←
+  RenderFlex#673c7 relayoutBoundary=up7 NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE(creator: Row ← Align ←
   ConstrainedBox ← Semantics ← DropdownMenuItem<Investment?> ← _FocusInheritedScope ← Focus ← ExcludeFocus ←
   IgnorePointer ← _Visibility ← _VisibilityScope ← Visibility ← ⋯, parentData: offset=Offset(0.0, 0.0) (can use size),
   constraints: BoxConstraints(0.0<=w<=Infinity, 0.0<=h<=24.0), size: MISSING, direction: horizontal, mainAxisAlignment:
@@ -58,7 +58,7 @@ The affected RenderFlex is:
 The creator information is set to:
   Row ← Align ← ConstrainedBox ← Semantics ← DropdownMenuItem<Investment?> ← _FocusInheritedScope ←
   Focus ← ExcludeFocus ← IgnorePointer ← _Visibility ← _VisibilityScope ← Visibility ← ⋯
-The nearest ancestor providing an unbounded width constraint is: RenderFlex#e8265 NEEDS-LAYOUT NEEDS-PAINT
+The nearest ancestor providing an unbounded width constraint is: RenderFlex#b5cc1 NEEDS-LAYOUT NEEDS-PAINT
 NEEDS-COMPOSITING-BITS-UPDATE:
   creator: Row ← Padding ← SizedBox ← DefaultTextStyle ← _Decorator ← InputDecorator ← Listener ←
     _GestureSemantics ← RawGestureDetector ← GestureDetector ← MouseRegion ← Semantics ← ⋯
@@ -214,7 +214,7 @@ dart-sdk/lib/async/zone.dart 917:26                                             
 dart-sdk/lib/_internal/js_dev_runtime/patch/js_allow_interop_patch.dart 224:27    _callDartFunctionFast1
 dart-sdk/lib/_internal/js_dev_runtime/patch/js_allow_interop_patch.dart 84:15     ret
 
-The following RenderObject was being processed when the exception was fired: RenderFlex#7b0a2 relayoutBoundary=up7
+The following RenderObject was being processed when the exception was fired: RenderFlex#673c7 relayoutBoundary=up7
 NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE:
   creator: Row ← Align ← ConstrainedBox ← Semantics ← DropdownMenuItem<Investment?> ←
     _FocusInheritedScope ← Focus ← ExcludeFocus ← IgnorePointer ← _Visibility ← _VisibilityScope ←
@@ -230,13 +230,13 @@ NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE:
   verticalDirection: down
   spacing: 0.0
 This RenderObject had the following descendants (showing up to depth 5):
-    child 1: RenderSemanticsAnnotations#abcd7 NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
-      child: RenderExcludeSemantics#37c04 NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
-        child: RenderConstrainedBox#7d69f NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
-          child: RenderPositionedBox#b70ce NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
-            child: RenderParagraph#1d06e NEEDS-LAYOUT NEEDS-PAINT
-    child 2: RenderConstrainedBox#9b2f9 NEEDS-LAYOUT NEEDS-PAINT
-    child 3: RenderParagraph#5a871 NEEDS-LAYOUT NEEDS-PAINT
+    child 1: RenderSemanticsAnnotations#9962a NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
+      child: RenderExcludeSemantics#2711e NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
+        child: RenderConstrainedBox#ff013 NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
+          child: RenderPositionedBox#f3d6d NEEDS-LAYOUT NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE
+            child: RenderParagraph#cbc59 NEEDS-LAYOUT NEEDS-PAINT
+    child 2: RenderConstrainedBox#ed067 NEEDS-LAYOUT NEEDS-PAINT
+    child 3: RenderParagraph#6ddfc NEEDS-LAYOUT NEEDS-PAINT
       text: TextSpan
 ════════════════════════════════════════════════════════════════════════════════════════════════════
 Another exception was thrown: Assertion failed:
@@ -302,7 +302,6 @@ Another exception was thrown: Cannot hit test a render box that has never been l
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
-
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
@@ -312,6 +311,14 @@ Another exception was thrown: Cannot hit test a render box that has never been l
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
 Another exception was thrown: Assertion failed:
 file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
 :12
@@ -349,3 +356,623 @@ Another exception was thrown: Assertion failed:
 file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
 :12
 Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Cannot hit test a render box that has never been laid out.
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
+Another exception was thrown: Assertion failed:
+file:///C:/Users/shanm/Desktop/Professional/Budget_app/flutter/packages/flutter/lib/src/rendering/mouse_tracker.dart:199
+:12
